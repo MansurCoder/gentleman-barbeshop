@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENTLEMAN MEN'S CLUB — барбершоп в Актобе | Мужские стрижки и запись в WhatsApp</title>
+<meta name="description" content="GENTLEMAN MEN'S CLUB — мужской барбершоп в Актобе. Мужские и детские стрижки, химическая завивка. Ежедневно 10:00–20:00. Запись через WhatsApp.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="GENTLEMAN MEN'S CLUB — барбершоп в Актобе">
+<meta property="og:description" content="Мужские стрижки и уход за бородой. Ежедневно 10:00–20:00.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A; --char:#151515; --ivory:#F4F0E8; --gold:#B99A62; --gray:#929292;
+  --line:rgba(244,240,232,.14);
+  --serif:'Cormorant Garamond','Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+  --hdr:84px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-size:16px;line-height:1.65;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+section{position:relative}
+.label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.02;letter-spacing:.01em;text-transform:uppercase}
+h2{font-size:clamp(38px,6.4vw,84px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 30px;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--gold);cursor:pointer;transition:background .3s,color .3s,border-color .3s;text-align:center;background:transparent}
+.btn-gold{background:var(--gold);color:var(--black)}
+.btn-gold:hover{background:var(--ivory);border-color:var(--ivory)}
+.btn-line{color:var(--ivory)}
+.btn-line:hover{background:var(--gold);color:var(--black)}
+.sec{padding:clamp(80px,12vw,160px) 0}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--hdr);transition:height .35s,background .35s,border-color .35s;border-bottom:1px solid transparent}
+header.small{--hdr:64px;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);border-color:var(--line)}
+.hdr{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--serif);font-weight:700;line-height:.95;letter-spacing:.22em;font-size:20px;text-transform:uppercase}
+.logo span{display:block;font-family:var(--sans);font-weight:500;font-size:9.5px;letter-spacing:.42em;color:var(--gold);margin-top:5px}
+nav ul{display:flex;gap:clamp(18px,2.6vw,42px);list-style:none}
+nav a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:10px 0;position:relative;color:var(--ivory)}
+nav a::after{content:"";position:absolute;left:0;bottom:4px;height:1px;width:0;background:var(--gold);transition:width .3s}
+nav a:hover::after{width:100%}
+.hdr .btn{min-height:44px;padding:0 24px;font-size:12px}
+.burger{display:none;width:48px;height:48px;background:none;border:0;cursor:pointer;position:relative}
+.burger i{position:absolute;left:12px;right:12px;height:1px;background:var(--ivory);transition:.3s}
+.burger i:nth-child(1){top:18px}.burger i:nth-child(2){top:24px}.burger i:nth-child(3){top:30px}
+.burger[aria-expanded=true] i:nth-child(1){top:24px;transform:rotate(45deg)}
+.burger[aria-expanded=true] i:nth-child(2){opacity:0}
+.burger[aria-expanded=true] i:nth-child(3){top:24px;transform:rotate(-45deg)}
+.mobile{display:none}
+@media(max-width:960px){
+  nav,.hdr>.btn{display:none}
+  .burger{display:block}
+  .mobile{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--black);z-index:40;padding:110px var(--pad) 32px;transform:translateY(-100%);visibility:hidden;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility .5s}
+  .mobile.open{transform:none;visibility:visible}
+  .mobile a.m{font-family:var(--serif);font-size:clamp(34px,10vw,52px);text-transform:uppercase;padding:10px 0;border-bottom:1px solid var(--line);font-weight:600}
+  .mobile .btn{margin-top:auto;min-height:62px;width:100%;font-size:14px}
+  header{z-index:60}
+}
+
+/* media placeholders */
+.media{position:relative;overflow:hidden;background:#101010;isolation:isolate}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media.ph{background:
+  repeating-linear-gradient(135deg,rgba(185,154,98,.05) 0 1px,transparent 1px 14px),
+  radial-gradient(120% 90% at 30% 20%,#232018,#0d0d0d 70%)}
+.media .cap{position:absolute;left:14px;bottom:12px;z-index:2;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);max-width:80%}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:flex-end;padding:calc(var(--hdr) + 40px) 0 clamp(56px,8vw,96px)}
+.hero .media{position:absolute;inset:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.25) 40%,rgba(10,10,10,.92));z-index:0}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(50px,11.5vw,168px);margin:20px 0 26px;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.sub{max-width:520px;color:#d9d4c8;font-size:clamp(16px,1.6vw,19px)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin:36px 0 44px}
+.loc{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory)}
+.loc::before{content:"";width:40px;height:1px;background:var(--gold)}
+@media(max-width:560px){.hero .cta .btn{width:100%}.hero .cta{gap:10px}.loc{letter-spacing:.14em;font-size:11px}}
+
+/* services */
+.head{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:clamp(40px,6vw,80px)}
+.head p{color:var(--gray);max-width:420px;justify-self:end}
+@media(max-width:800px){.head{grid-template-columns:1fr}.head p{justify-self:start}}
+.svc{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px 1fr auto auto;gap:24px;align-items:center;padding:clamp(26px,3.4vw,44px) 0;border-bottom:1px solid var(--line);transition:padding .35s}
+.row:hover{padding-left:14px}
+.row .n{font-family:var(--serif);color:var(--gold);font-size:22px}
+.row h3{font-size:clamp(26px,3.6vw,48px);text-transform:none}
+.row .pr{font-size:13px;color:var(--gray);letter-spacing:.06em;text-align:right;max-width:200px}
+.row .pr b{display:block;color:var(--ivory);font-weight:500}
+.row .btn{min-height:46px;padding:0 22px;font-size:12px}
+@media(max-width:760px){
+  .row{grid-template-columns:40px 1fr;gap:10px 14px}
+  .row .pr{grid-column:2;text-align:left;max-width:none}
+  .row .btn{grid-column:1/-1;width:100%;min-height:48px}
+}
+.note{margin-top:28px;font-size:13px;color:var(--gray);max-width:720px;border-left:1px solid var(--gold);padding-left:16px}
+
+/* portfolio */
+.pf{background:var(--char)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,19vw,280px);gap:clamp(10px,1.4vw,20px)}
+.tile{position:relative;grid-column:span 4;grid-row:span 2}
+.tile:nth-child(1){grid-column:span 5;grid-row:span 3}
+.tile:nth-child(2){grid-column:span 4;grid-row:span 2}
+.tile:nth-child(3){grid-column:span 3;grid-row:span 2}
+.tile:nth-child(4){grid-column:span 3;grid-row:span 2}
+.tile:nth-child(5){grid-column:span 4;grid-row:span 1}
+.tile:nth-child(6){grid-column:span 4;grid-row:span 1}
+.tile .media{position:absolute;inset:0}
+.tile .over{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(14px,1.8vw,24px);background:linear-gradient(180deg,transparent 40%,rgba(10,10,10,.88));gap:10px}
+.tile h3{font-size:clamp(22px,2.4vw,34px)}
+.tile .btn{min-height:44px;padding:0 16px;font-size:11px;letter-spacing:.16em;opacity:0;transform:translateY(8px);transition:.3s;align-self:flex-start;background:rgba(10,10,10,.6)}
+.tile:hover .btn,.tile:focus-within .btn{opacity:1;transform:none}
+@media(hover:none){.tile .btn{opacity:1;transform:none}}
+@media(max-width:760px){
+  .grid{grid-template-columns:1fr 1fr;grid-auto-rows:clamp(220px,62vw,300px)}
+  .tile,.tile:nth-child(n){grid-column:span 1;grid-row:span 1}
+  .tile:nth-child(1){grid-column:span 2}
+  .tile .btn{font-size:10px;padding:0 10px;letter-spacing:.1em;min-height:44px}
+}
+.disc{margin-top:20px;font-size:12px;color:var(--gray)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,96px);align-items:center}
+.about .media{aspect-ratio:4/5}
+.about p{color:#cfcabd;font-size:clamp(17px,1.7vw,20px);margin-top:28px;max-width:480px}
+.about h2{font-size:clamp(34px,5vw,68px);margin-top:18px}
+@media(max-width:800px){.about{grid-template-columns:1fr}.about .media{aspect-ratio:4/3}}
+
+/* booking */
+.book{background:var(--char)}
+.bk{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px)}
+@media(max-width:900px){.bk{grid-template-columns:1fr}}
+.bk .info p{color:var(--gray);margin-top:24px;max-width:380px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:26px 24px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.full{grid-column:1/-1}
+@media(max-width:560px){form{grid-template-columns:1fr}}
+label{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray)}
+label sup{color:var(--gold)}
+input,select,textarea{width:100%;min-height:52px;background:transparent;border:0;border-bottom:1px solid rgba(244,240,232,.3);padding:12px 2px;border-radius:0;font-size:16px;transition:border-color .3s;color-scheme:dark}
+textarea{min-height:100px;resize:vertical}
+select option{background:#151515}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+input:user-invalid,.bad{border-color:#c0705a}
+.err{font-size:12px;color:#d98a76;min-height:0}
+form .btn{width:100%}
+.disclaimer{grid-column:1/-1;font-size:13px;color:var(--gray)}
+.disclaimer b{color:var(--ivory);font-weight:500}
+
+/* contacts */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--black);padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:14px;min-height:220px;transition:background .3s}
+a.card:hover{background:var(--char)}
+.card svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.2}
+.card .label{color:var(--gray)}
+.card p,.card address{font-style:normal;font-size:17px;line-height:1.5}
+@media(max-width:1000px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.card{min-height:0}}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+@media(max-width:560px){.cta-row .btn{width:100%}}
+
+/* instagram */
+.ig{background:var(--char)}
+.igg{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1.2vw,16px);margin:clamp(36px,5vw,64px) 0}
+.igg .media{aspect-ratio:1}
+@media(max-width:700px){.igg{grid-template-columns:1fr 1fr}}
+.igtop{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+
+/* footer */
+footer{padding:clamp(56px,8vw,96px) 0 32px;border-top:1px solid var(--line)}
+.ft{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media(max-width:800px){.ft{grid-template-columns:1fr}}
+.ft ul{list-style:none;display:grid;gap:8px;color:#cfcabd;font-size:15px}
+.ft a:hover{color:var(--gold)}
+.tag{font-family:var(--serif);font-size:clamp(28px,4vw,48px);margin-top:28px;letter-spacing:.06em;color:var(--gold)}
+.copy{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--gray);letter-spacing:.06em}
+
+/* motion */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap hdr">
+    <a href="#top" class="logo" aria-label="GENTLEMAN MEN'S CLUB — на главную">GENTLEMAN<span>MEN'S CLUB</span></a>
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="#top">Главная</a></li>
+        <li><a href="#services">Услуги и цены</a></li>
+        <li><a href="#work">Наши работы</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="#booking" class="btn btn-gold">Записаться</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile" aria-label="Открыть меню"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="mobile" id="mobile">
+  <a class="m" href="#top">Главная</a>
+  <a class="m" href="#services">Услуги и цены</a>
+  <a class="m" href="#work">Наши работы</a>
+  <a class="m" href="#about">О нас</a>
+  <a class="m" href="#contacts">Контакты</a>
+  <a href="#booking" class="btn btn-gold">Записаться</a>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="media ph" data-img="hero" data-cap="Место для фото: стрижка / интерьер"></div>
+  <div class="wrap">
+    <p class="label">Barbershop · Aktobe</p>
+    <h1 id="h1">Твой стиль.<br><em>Твои правила.</em></h1>
+    <p class="sub">Мужские стрижки и уход за бородой. Стиль, точность и внимание к деталям.</p>
+    <div class="cta">
+      <a href="#booking" class="btn btn-gold">Записаться на стрижку</a>
+      <a href="#services" class="btn btn-line">Смотреть услуги</a>
+    </div>
+    <p class="loc">Актобе · каждый день 10:00–20:00</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label">01 — Прайс</p><h2 id="h-serv" style="margin-top:18px">Услуги<br>и стоимость</h2></div>
+      <p>Подбери услугу и свяжись с нами, чтобы уточнить стоимость и удобное время.</p>
+    </div>
+    <div class="svc" id="svcList"></div>
+    <p class="note rv" id="svcNote"></p>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="sec pf" id="work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="label">02 — Портфолио</p><h2 id="h-work" style="margin-top:18px">Работы, которые говорят сами за себя</h2></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="disc">Изображения — временные примеры стилей, не работы мастеров Gentleman. Замените их фото из Instagram барбершопа.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" aria-labelledby="h-about">
+  <div class="wrap about">
+    <div class="media ph rv" data-img="about" data-cap="Место для фото интерьера барбершопа"></div>
+    <div class="rv">
+      <p class="label">03 — О нас</p>
+      <h2 id="h-about">Место, где детали имеют значение</h2>
+      <p>GENTLEMAN MEN'S CLUB — мужской барбершоп в Актобе. Выбери подходящую услугу, свяжись с нами и согласуй удобное время визита.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="sec book" id="booking" aria-labelledby="h-book">
+  <div class="wrap bk">
+    <div class="info rv">
+      <p class="label">04 — Запись</p>
+      <h2 id="h-book" style="margin-top:18px;font-size:clamp(34px,5vw,68px)">Твоя стрижка начинается здесь</h2>
+      <p>Заполни заявку — откроется WhatsApp с готовым сообщением. Останется нажать «Отправить».</p>
+    </div>
+    <form id="bookForm" class="rv" novalidate>
+      <div class="f"><label for="name">Имя клиента <sup>*</sup></label><input id="name" name="name" type="text" autocomplete="name" required maxlength="60"><span class="err" id="e-name"></span></div>
+      <div class="f"><label for="phone">Номер телефона</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" maxlength="25"></div>
+      <div class="f full"><label for="service">Услуга <sup>*</sup></label>
+        <select id="service" name="service" required></select><span class="err" id="e-service"></span></div>
+      <div class="f"><label for="date">Желаемая дата</label><input id="date" name="date" type="date"></div>
+      <div class="f"><label for="time">Желаемое время</label><select id="time" name="time"><option value="">Не выбрано</option></select></div>
+      <div class="f full"><label for="notes">Пожелания</label><textarea id="notes" name="notes" maxlength="500"></textarea></div>
+      <div class="f full"><button class="btn btn-gold" type="submit">Отправить заявку в WhatsApp</button></div>
+      <p class="disclaimer">Выбранные дата и время — ваше пожелание, а не бронь. <b>Время и запись считаются подтверждёнными только после ответа администратора.</b> Оплата и данные карты не требуются.</p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="sec" id="contacts" aria-labelledby="h-cont">
+  <div class="wrap">
+    <div class="head rv"><div><p class="label">05 — Контакты</p><h2 id="h-cont" style="margin-top:18px">Найди своего Gentleman</h2></div></div>
+    <div class="cards rv">
+      <div class="card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="label">Адрес</span><address id="cAddr"></address></div>
+      <div class="card"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="label">Часы работы</span><p id="cHours"></p></div>
+      <a class="card" id="cPhone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span class="label">Телефон</span><p id="cPhoneT"></p></a>
+      <a class="card" id="cIg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></svg><span class="label">Instagram</span><p id="cIgT"></p></a>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-gold" id="cWa" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="btn btn-line" id="cDir" target="_blank" rel="noopener">Построить маршрут</a>
+      <a class="btn btn-line" id="cZap" target="_blank" rel="noopener">Страница записи Zapis.me</a>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="sec ig" id="instagram" aria-labelledby="h-ig">
+  <div class="wrap">
+    <div class="igtop rv">
+      <div><p class="label">06 — Instagram</p><h2 id="h-ig" style="margin-top:18px">Следи за стилем</h2></div>
+      <a class="btn btn-line" id="igBtn" target="_blank" rel="noopener">@gentleman_mensclub</a>
+    </div>
+    <div class="igg" id="igg"></div>
+    <p class="disc">Временные заглушки. Замените их реальными фото из Instagram — см. список IG_PHOTOS в настройках файла.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a href="#top" class="logo">GENTLEMAN<span>MEN'S CLUB</span></a>
+        <p class="tag">Стиль — в деталях.</p>
+      </div>
+      <ul>
+        <li>GENTLEMAN MEN'S CLUB</li>
+        <li>Актобе, Казахстан</li>
+        <li>Ежедневно 10:00–20:00</li>
+        <li><a id="fPhone"></a></li>
+      </ul>
+      <ul>
+        <li><a id="fIg" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a id="fWa" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#booking">Записаться</a></li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="yr"></span> GENTLEMAN MEN'S CLUB. Все права защищены.</p>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   НАСТРОЙКИ ВЛАДЕЛЬЦА — редактируйте только этот блок
+   ===================================================================== */
+const CONFIG = {
+  name: "GENTLEMAN MEN'S CLUB",
+  address: "проспект Алии Молдагуловой, 13, Актобе, Казахстан", // подтвердить у владельца
+  hours: "ежедневно, 10:00–20:00",
+  openHour: 10, closeHour: 20,           // часы приёма для выбора времени
+  phoneDisplay: "+7 775 755-66-99",
+  phoneTel: "+77757556699",
+  waNumber: "77757556699",
+  instagram: "https://www.instagram.com/gentleman_mensclub/",
+  zapis: "https://zapis.me/gentleman-mens-club",
+  // Показывать строку «от 6 000 ₸» с пояснением (true/false)
+  showFromPrice: true,
+  fromPriceText: "Услуги от 6 000 ₸",
+  // Фото: вставьте URL или путь к файлу, например "photos/hero.jpg". Пусто = заглушка.
+  IMAGES: { hero: "", about: "" },
+  // ПРАЙС-ЛИСТ. price: null → «Стоимость — уточняйте при записи».
+  // После проверки поставьте текст, например price: "6 000 ₸"
+  SERVICES: [
+    { name: "Мужская стрижка",              price: null },
+    { name: "Детская стрижка",              price: null },
+    { name: "Мужская химическая завивка",   price: null }
+  ],
+  // Портфолио: замените image на реальные фото. position — фокус кадра, напр. "50% 30%".
+  PORTFOLIO: [
+    { style: "Современный фейд",       image: "", position: "50% 30%" },
+    { style: "Классическая стрижка",   image: "", position: "50% 30%" },
+    { style: "Текстурная причёска",    image: "", position: "50% 30%" },
+    { style: "Уход за бородой",        image: "", position: "50% 40%" },
+    { style: "Фейд с переходом",       image: "", position: "50% 30%" },
+    { style: "Короткая стрижка",       image: "", position: "50% 30%" }
+  ],
+  // Фото для блока Instagram (4 шт.)
+  IG_PHOTOS: ["", "", "", ""]
+};
+/* ===================================================================== */
+
+const $ = s => document.querySelector(s);
+const enc = encodeURIComponent;
+const waLink = text => `https://wa.me/${CONFIG.waNumber}` + (text ? `?text=${enc(text)}` : "");
+
+/* media helper */
+function setMedia(el, src, cap, pos){
+  if(src){
+    el.classList.remove("ph");
+    const i = document.createElement("img");
+    i.src = src; i.alt = cap || ""; i.loading = "lazy"; i.decoding = "async";
+    if(pos) i.style.objectPosition = pos;
+    el.appendChild(i);
+  } else if(cap){
+    const c = document.createElement("span"); c.className = "cap"; c.textContent = cap; el.appendChild(c);
+  }
+}
+document.querySelectorAll("[data-img]").forEach(el=>{
+  const k = el.dataset.img;
+  setMedia(el, CONFIG.IMAGES[k], el.dataset.cap);
+  if(k==="hero"){ const i=el.querySelector("img"); if(i){ i.loading="eager"; i.fetchPriority="high"; } }
+});
+
+/* services */
+const list = $("#svcList");
+CONFIG.SERVICES.forEach((s,i)=>{
+  const row = document.createElement("div"); row.className = "row rv";
+  const priceHTML = s.price ? `<b></b>` : `<b></b>`;
+  row.innerHTML = `<span class="n">${String(i+1).padStart(2,"0")}</span><h3></h3><div class="pr"><b></b></div><a class="btn btn-line" target="_blank" rel="noopener">Записаться</a>`;
+  row.querySelector("h3").textContent = s.name;
+  row.querySelector(".pr b").textContent = s.price || "Стоимость — уточняйте при записи";
+  row.querySelector("a").href = waLink(`Здравствуйте! Хочу записаться в ${CONFIG.name}.\n\nУслуга: ${s.name}\n\nПодтвердите, пожалуйста, доступность времени и стоимость услуги.`);
+  list.appendChild(row);
+});
+$("#svcNote").textContent = CONFIG.showFromPrice
+  ? `${CONFIG.fromPriceText}. Итоговая цена зависит от выбранной услуги и подтверждается администратором при записи.`
+  : "Точная стоимость подтверждается администратором при записи.";
+
+/* portfolio */
+const grid = $("#grid");
+CONFIG.PORTFOLIO.forEach(p=>{
+  const t = document.createElement("article"); t.className = "tile rv";
+  t.innerHTML = `<div class="media ph"></div><div class="over"><h3></h3><a class="btn btn-line" target="_blank" rel="noopener">Хочу такую стрижку</a></div>`;
+  t.querySelector("h3").textContent = p.style;
+  setMedia(t.querySelector(".media"), p.image, p.image ? p.style : "Пример стиля · заменить фото", p.position);
+  t.querySelector("a").href = waLink(`Здравствуйте! Хочу такую стрижку: ${p.style}.\nПодскажите, пожалуйста, можно ли записаться и какова стоимость?`);
+  grid.appendChild(t);
+});
+
+/* instagram */
+const igg = $("#igg");
+CONFIG.IG_PHOTOS.forEach((src,i)=>{
+  const a = document.createElement("a"); a.className = "media ph rv"; a.href = CONFIG.instagram; a.target = "_blank"; a.rel = "noopener";
+  a.setAttribute("aria-label","Открыть Instagram @gentleman_mensclub");
+  setMedia(a, src, src ? "Фото из Instagram" : "Место для фото " + (i+1));
+  igg.appendChild(a);
+});
+
+/* contacts + footer links */
+$("#cAddr").textContent = CONFIG.address;
+$("#cHours").textContent = CONFIG.hours;
+$("#cPhone").href = "tel:" + CONFIG.phoneTel; $("#cPhoneT").textContent = CONFIG.phoneDisplay;
+$("#cIg").href = CONFIG.instagram; $("#cIgT").textContent = "@gentleman_mensclub";
+$("#cWa").href = waLink("");
+$("#cDir").href = "https://www.google.com/maps/search/?api=1&query=" + enc(CONFIG.address);
+$("#cZap").href = CONFIG.zapis;
+$("#igBtn").href = CONFIG.instagram;
+$("#fPhone").href = "tel:" + CONFIG.phoneTel; $("#fPhone").textContent = CONFIG.phoneDisplay;
+$("#fIg").href = CONFIG.instagram; $("#fWa").href = waLink("");
+$("#yr").textContent = new Date().getFullYear();
+
+/* form options */
+const sel = $("#service");
+sel.innerHTML = `<option value="">Выберите услугу</option>` +
+  CONFIG.SERVICES.map(s=>`<option>${s.name}</option>`).join("") + `<option>Другая услуга</option>`;
+const tsel = $("#time");
+for(let h=CONFIG.openHour; h<CONFIG.closeHour; h++){
+  for(const m of ["00","30"]){
+    const o = document.createElement("option"); o.textContent = `${String(h).padStart(2,"0")}:${m}`; tsel.appendChild(o);
+  }
+}
+const dateEl = $("#date");
+const d = new Date(); const pad = n=>String(n).padStart(2,"0");
+dateEl.min = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+
+function fmtDate(v){ if(!v) return ""; const [y,m,dd]=v.split("-"); return `${dd}.${m}.${y}`; }
+
+/* message builder (exposed for testing) */
+function buildMessage(v){
+  const lines = [`Здравствуйте! Хочу записаться в ${CONFIG.name}.`, ""];
+  if(v.name) lines.push(`Имя: ${v.name}`);
+  if(v.phone) lines.push(`Телефон: ${v.phone}`);
+  if(v.service) lines.push(`Услуга: ${v.service}`);
+  if(v.date) lines.push(`Желаемая дата: ${fmtDate(v.date)}`);
+  if(v.time) lines.push(`Желаемое время: ${v.time}`);
+  if(v.notes) lines.push(`Пожелания: ${v.notes}`);
+  lines.push("", "Подтвердите, пожалуйста, доступность времени и стоимость услуги.");
+  return lines.join("\n");
+}
+
+$("#bookForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const f = e.target;
+  const v = { name:f.name.value.trim(), phone:f.phone.value.trim(), service:f.service.value, date:f.date.value, time:f.time.value, notes:f.notes.value.trim() };
+  let ok = true;
+  $("#e-name").textContent = $("#e-service").textContent = "";
+  f.name.classList.remove("bad"); f.service.classList.remove("bad");
+  if(!v.name){ $("#e-name").textContent = "Укажите имя"; f.name.classList.add("bad"); ok = false; }
+  if(!v.service){ $("#e-service").textContent = "Выберите услугу"; f.service.classList.add("bad"); ok = false; }
+  if(!ok){ (v.name ? f.service : f.name).focus(); return; }
+  const url = waLink(buildMessage(v));
+  const w = window.open(url, "_blank", "noopener");
+  if(!w) location.href = url; // если блокировщик окон — открыть в этой вкладке
+});
+
+/* header / menu */
+const hdr = $("#hdr"), burger = $("#burger"), mob = $("#mobile");
+const onScroll = ()=> hdr.classList.toggle("small", scrollY > 40);
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+function toggle(open){
+  burger.setAttribute("aria-expanded", open);
+  burger.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+  mob.classList.toggle("open", open);
+  document.body.style.overflow = open ? "hidden" : "";
+}
+burger.addEventListener("click", ()=> toggle(burger.getAttribute("aria-expanded")!=="true"));
+mob.querySelectorAll("a").forEach(a=>a.addEventListener("click", ()=>toggle(false)));
+addEventListener("keydown", e=>{ if(e.key==="Escape") toggle(false); });
+addEventListener("resize", ()=>{ if(innerWidth>960) toggle(false); });
+
+/* reveal */
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target); } }),{threshold:.12}) : null;
+document.querySelectorAll(".rv").forEach(el=> io ? io.observe(el) : el.classList.add("in"));
+</script>
+</body>
+</html>
